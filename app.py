@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Cấu hình trang
-st.set_page_config(page_title="Dự đoán Ung thư vú (LDA)", layout="wide")
+st.set_page_config(page_title="Dự đoán Ung thư vú", layout="wide")
 
 
 # --- LOAD RESOURCES ---
@@ -34,7 +34,7 @@ def load_data():
 def main():
     st.title("🩺 Ứng dụng Dự đoán Ung thư vú")
     st.markdown("""
-    Ứng dụng sử dụng thuật toán **Linear Discriminant Analysis (LDA)**.
+    Ứng dụng sử dụng thuật toán **Loigistic Regression** kết hợp **Linear Discriminant Analysis (LDA)**.
     Bạn có thể **chọn ID bệnh nhân** từ dữ liệu có sẵn để tự động điền các chỉ số và kiểm tra độ chính xác của mô hình.
     """)
 
@@ -165,4 +165,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
