@@ -140,7 +140,7 @@ def main():
 
         # 3. Hiển thị kết quả
         st.divider()
-        st.header("Kết quả phân tích từ AI:")
+        st.header("Kết quả phân tích từ mô hình:")
 
         col_res1, col_res2 = st.columns(2)
 
@@ -159,11 +159,12 @@ def main():
                 st.write("**So sánh với thực tế:**")
                 pred_label = 'M' if prediction == 0 else 'B'
                 if pred_label == actual_diagnosis:
-                    st.info("👏 AI dự đoán **ĐÚNG** với dữ liệu gốc.")
+                    st.info("👏 Mô hình dự đoán **ĐÚNG** với dữ liệu gốc.")
                 else:
-                    st.warning("⚠️ AI dự đoán **SAI** so với dữ liệu gốc.")
+                    st.warning("⚠️ Mô hình dự đoán **SAI** so với dữ liệu gốc.")
 
 
 if __name__ == "__main__":
 
     main()
+
